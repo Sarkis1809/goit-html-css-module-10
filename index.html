@@ -27,25 +27,35 @@
             </li>
           </ul>
           <div class="nav__actions">
-            <a class="action" href="#" aria-label="Make a purchase">
+            <button
+              type="button"
+              class="action"
+              href="#"
+              aria-label="Make a purchase"
+            >
               <svg class="icon icon-cart action__icon">
                 <use xlink:href="#icon-cart"></use>
               </svg>
-            </a>
-            <a class="action" href="#" aria-label="Search button">
+            </button>
+            <button
+              type="button"
+              class="action"
+              href="#"
+              aria-label="Search button"
+            >
               <svg class="icon icon-search action__icon">
                 <use xlink:href="#icon-search"></use>
               </svg>
-            </a>
+            </button>
           </div>
         </nav>
       </div>
     </header>
-    <div class="hero-wrapper">
-      <div class="container hero">
-        <span class="hero__title decorative-title">Creative Template</span>
+    <div class="hero">
+      <div class="container">
         <h1 class="hero__title section-title">
-          Welcome <br />
+          <span class="hero__title decorative-title">Creative Template</span>
+          <span class="hero__transfer">Welcome</span>
           To Mogo
         </h1>
         <button class="hero__button" aria-label="Learn more about Mogo Team">
@@ -57,9 +67,8 @@
       <span class="services__title decorative-title">We work with</span>
       <h2 class="services__title section-title">Amazing services</h2>
       <div class="decorative-line"></div>
-      <div class="services">
-        <div class="service">
-          <img src="images/img/clock.png" alt="" class="service__icon" />
+      <ul class="services">
+        <li class="service service__bg-clock">
           <div class="service__info">
             <h3 class="service__title title">Photography</h3>
             <p class="service__desc text">
@@ -67,9 +76,8 @@
               quibusdam.
             </p>
           </div>
-        </div>
-        <div class="service">
-          <img src="images/img/line.png" alt="" class="service__icon" />
+        </li>
+        <li class="service service__bg-line">
           <div class="service__info">
             <h3 class="service__title title">Web design</h3>
             <p class="service__desc text">
@@ -77,13 +85,8 @@
               quibusdam.
             </p>
           </div>
-        </div>
-        <div class="service">
-          <img
-            src="images/img/creativity.png"
-            alt="home icon"
-            class="service__icon"
-          />
+        </li>
+        <li class="service service__bg-creativity">
           <div class="service__info">
             <h3 class="service__title title">Creativity</h3>
             <p class="service__desc text">
@@ -91,9 +94,8 @@
               quibusdam.
             </p>
           </div>
-        </div>
-        <div class="service">
-          <img src="images/img/book.png" alt="" class="service__icon" />
+        </li>
+        <li class="service service__bg-book">
           <div class="service__info">
             <h3 class="service__title title">Seo</h3>
             <p class="service__desc text">
@@ -101,9 +103,8 @@
               quibusdam.
             </p>
           </div>
-        </div>
-        <div class="service">
-          <img src="images/img/home.png" alt="" class="service__icon" />
+        </li>
+        <li class="service service__bg-home">
           <div class="service__info">
             <h3 class="service__title title">CSS/html</h3>
             <p class="service__desc text">
@@ -111,9 +112,8 @@
               quibusdam.
             </p>
           </div>
-        </div>
-        <div class="service">
-          <img src="images/img/digital.png" alt="" class="service__icon" />
+        </li>
+        <li class="service service__bg-digital">
           <div class="service__info">
             <h3 class="service__title title">Digital</h3>
             <p class="service__desc text">
@@ -121,8 +121,8 @@
               quibusdam.
             </p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
     <div class="team-wrapper">
       <div class="container team">
@@ -137,7 +137,7 @@
         </p>
         <div class="team-members">
           <div class="team-member">
-            <div class="team-member__card" tabindex="0">
+            <div class="team-member__card">
               <div class="main-content">
                 <img
                   srcset="images/img/person1.png, images/img/person1@2x.png 2x"
@@ -191,7 +191,7 @@
               <p class="team-member__role text">Graphic Designer</p>
             </div>
           </div>
-          <div class="team-member" tabindex="0">
+          <div class="team-member">
             <div class="team-member__card">
               <div class="main-content">
                 <img
@@ -246,7 +246,7 @@
               <p class="team-member__role text">Branding/UX design</p>
             </div>
           </div>
-          <div class="team-member" tabindex="0">
+          <div class="team-member">
             <div class="team-member__card">
               <div class="main-content">
                 <img
